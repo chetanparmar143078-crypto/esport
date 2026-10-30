@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rai Esports - Free Fire Tournament</title>
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark esports-nav sticky-top">
+    <div class="container">
+        <button class="navbar-brand logo-btn" onclick="showPage('home')">⚡ RAI ESPORTS</button>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNav">
+            <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+                <li class="nav-item"><button class="nav-link nav-btn" onclick="showPage('home')">HOME</button></li>
+                <li class="nav-item"><button class="nav-link nav-btn" onclick="showPage('tournament')">TOURNAMENT</button></li>
+                <li class="nav-item"><button class="nav-link nav-btn" onclick="showPage('leaderboard')">LEADERBOARD</button></li>
+                <li class="nav-item"><button class="nav-link nav-btn" onclick="showPage('rules')">RULES</button></li>
+                <li class="nav-item"><button class="nav-link nav-btn" onclick="showPage('contact')">CONTACT</button></li>
+                <li class="nav-item"><button class="btn btn-danger btn-sm admin-btn" onclick="showPage('login')">ADMIN</button></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<main>
+
+<!-- HOME -->
+<section id="home" class="page active-page">
+    <div class="container py-4">
+        <div class="hero-section">
+            <div class="hero-overlay">
+                <span class="small-tag">🔥 DAILY FREE FIRE ESPORTS</span>
+                <h1>RAI ESPORTS</h1>
+                <p class="hero-subtitle">Battle. Compete. Win.</p>
+                <p>Join daily Solo, Duo and Squad custom-room tournaments.</p>
+                <div class="d-flex flex-wrap gap-3 justify-content-center mt-4">
+                    <button class="btn btn-primary esports-btn" onclick="showPage('tournament')">JOIN TOURNAMENT</button>
+                    <button class="btn btn-outline-info esports-outline" onclick="showPage('leaderboard')">VIEW RESULTS</button>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="section-title mt-5">🎮 FREE FIRE GAME MODES</h2>
+
+        <div class="mode-grid">
+            <div class="game-card">
+                <img src="https://images.unsplash.com/photo-1560419015-7c427e8ae5ba?auto=format&fit=crop&w=800&q=85" alt="Solo gaming">
+                <div class="game-card-body">
+                    <div class="mode-icon">🎯</div>
+                    <h3>SOLO</h3>
+                    <p>Fight alone and become the champion.</p>
+                    <button class="btn btn-sm btn-primary" onclick="showPage('tournament')">View Tournament</button>
+                </div>
+            </div>
+
+            <div class="game-card">
+                <img src="https://images.unsplash.com/photo-1593305841991-05c297ba4575?auto=format&fit=crop&w=800&q=85" alt="Duo gaming">
+                <div class="game-card-body">
+                    <div class="mode-icon">⚔️</div>
+                    <h3>DUO</h3>
+                    <p>Play with your partner and win together.</p>
+                    <button class="btn btn-sm btn-primary" onclick="showPage('tournament')">View Tournament</button>
+                </div>
+            </div>
+
+            <div class="game-card">
+                <img src="https://images.unsplash.com/photo-1603481546238-487240415921?auto=format&fit=crop&w=800&q=85" alt="Squad gaming">
+                <div class="game-card-body">
+                    <div class="mode-icon">🔥</div>
+                    <h3>SQUAD</h3>
+                    <p>Build your squad and dominate the match.</p>
+                    <button class="btn btn-sm btn-primary" onclick="showPage('tournament')">View Tournament</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="info-grid mt-4">
+            <div class="info-card">
+                <h3>⚡ Latest Updates</h3>
+                <p>• Daily custom-room matches</p>
+                <p>• Room starts after 20 registrations</p>
+                <p>• Results updated by admin</p>
+            </div>
+            <div class="info-card">
+                <h3>🏆 Why Rai Esports?</h3>
+                <p>Fast tournaments, fair play and exciting rewards for Free Fire players.</p>
+                <p>Easy registration and clear scoring system.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- TOURNAMENT -->
+<section id="tournament" class="page">
+    <div class="container py-5">
+        <img class="banner-img" src="https://images.unsplash.com/photo-1542751110-97427bbecf20?auto=format&fit=crop&w=1400&q=90" alt="Esports tournament">
+        <h2 class="section-title">🏆 TOURNAMENT DETAILS</h2>
+
+        <div class="card esports-card">
+            <h3>Entry Fee & Prize Details</h3>
+            <div class="table-responsive">
+                <table class="table esports-table align-middle">
+                    <thead>
+                        <tr><th>MODE</th><th>ENTRY</th><th>1ST</th><th>2ND</th><th>3RD</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>🎯 Solo</td><td>₹30 / ₹50 / ₹100</td><td>₹120</td><td>₹80</td><td>₹50</td></tr>
+                        <tr><td>⚔️ Duo</td><td>₹30 / ₹50 / ₹100</td><td>₹250</td><td>₹150</td><td>₹100</td></tr>
+                        <tr><td>🔥 Squad</td><td>₹30 / ₹50 / ₹100</td><td>₹400</td><td>₹250</td><td>₹150</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="tournament-grid mt-4">
+            <div class="info-card">
+                <h3>🎮 Match Status</h3>
+                <p>Registration: <span class="status-badge">OPEN</span></p>
+                <p>Players Required: <strong>20</strong></p>
+                <p>Room Type: <strong>Custom Room</strong></p>
+                <p>Start: <strong>After 20 registrations</strong></p>
+            </div>
+            <div class="info-card">
+                <h3>🚀 Registration</h3>
+                <p>Select your mode and register for the upcoming tournament.</p>
+                <button class="btn btn-primary esports-btn" onclick="alert('Registration will open soon!')">REGISTER NOW</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- LEADERBOARD -->
+<section id="leaderboard" class="page">
+    <div class="container py-5">
+        <img class="banner-img" src="https://images.unsplash.com/photo-1547394765-185e1e68f34e?auto=format&fit=crop&w=1400&q=90" alt="Gaming leaderboard">
+        <h2 class="section-title">🏅 LEADERBOARD & RESULTS</h2>
+
+        <div class="card esports-card">
+            <div class="table-responsive">
+                <table class="table esports-table">
+                    <thead>
+                        <tr><th>RANK</th><th>PLAYER</th><th>KILLS</th><th>POSITION</th><th>POINTS</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>🥇 1</td><td>Player 1</td><td>9</td><td>Top 1</td><td>19</td></tr>
+                        <tr><td>🥈 2</td><td>Player 2</td><td>8</td><td>Top 2</td><td>18</td></tr>
+                        <tr><td>🥉 3</td><td>Player 3</td><td>7</td><td>Top 3</td><td>17</td></tr>
+                        <tr><td>4</td><td>Player 4</td><td>6</td><td>Top 4</td><td>16</td></tr>
+                        <tr><td>5</td><td>Player 5</td><td>5</td><td>Top 5</td><td>15</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="info-grid mt-4">
+            <div class="info-card">
+                <h3>📊 Scoring System</h3>
+                <p>🔥 1 Kill = 1 Point</p>
+                <p>🏆 Top 1 = 10 Points</p>
+                <p>Highest total points decide ranking.</p>
+            </div>
+            <div class="info-card">
+                <h3>📸 Match Results</h3>
+                <p>Official result screenshots can be uploaded by the admin.</p>
+                <button class="btn btn-outline-info esports-outline" onclick="showPage('contact')">Report Result Issue</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- RULES -->
+<section id="rules" class="page">
+    <div class="container py-5">
+        <h2 class="section-title">📜 TOURNAMENT RULES</h2>
+        <div class="rules-grid">
+            <div class="card esports-card">
+                <h3>⚠️ Important Rules</h3>
+                <ol class="rules-list">
+                    <li>No team-up during Solo matches.</li>
+                    <li>No refunds after successful registration.</li>
+                    <li>Cheating, hacks and panels are prohibited.</li>
+                    <li>No emulators. Phone players only.</li>
+                    <li>Room starts after 20 registrations.</li>
+                    <li>Follow all organizer instructions.</li>
+                    <li>Results follow the official scoring system.</li>
+                </ol>
+            </div>
+            <div class="card esports-card">
+                <h3>🔥 Point System</h3>
+                <div class="point-box"><strong>1 Kill</strong><span>1 Point</span></div>
+                <div class="point-box"><strong>Top 1</strong><span>10 Points</span></div>
+                <div class="point-box"><strong>Highest Score</strong><span>Top Rank</span></div>
+                <p class="mt-3">Play fair and follow the organizer's instructions.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="page">
+    <div class="container py-5">
+        <h2 class="section-title">📞 CONTACT & SUPPORT</h2>
+        <div class="contact-grid">
+            <div class="card esports-card">
+                <h3>Send Message</h3>
+                <form onsubmit="sendMessage(event)">
+                    <div class="mb-3"><label>Name</label><input class="form-control esports-input" required placeholder="Enter your name"></div>
+                    <div class="mb-3"><label>Email / Mobile</label><input class="form-control esports-input" required placeholder="Enter contact"></div>
+                    <div class="mb-3">
+                        <label>Issue</label>
+                        <select class="form-select esports-input">
+                            <option>Registration Help</option>
+                            <option>Result Query</option>
+                            <option>Payment Issue</option>
+                            <option>Other</option>
+                        </select>
+                    </div>
+                    <div class="mb-3"><label>Message</label><textarea class="form-control esports-input" rows="5" required placeholder="Write your message"></textarea></div>
+                    <button class="btn btn-primary esports-btn" type="submit">SEND MESSAGE</button>
+                </form>
+            </div>
+            <div>
+                <div class="info-card mb-4"><h3>💬 Support</h3><p>Rai Esports Admin</p><p>Daily tournament support available.</p></div>
+                <div class="info-card"><h3>🌐 Community</h3><p>Instagram</p><p>Telegram</p><p>Email Support</p></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- LOGIN -->
+<section id="login" class="page">
+    <div class="container py-5">
+        <div class="login-card card esports-card">
+            <h2 class="section-title">🔐 ADMIN LOGIN</h2>
+            <form onsubmit="login(event)">
+                <div class="mb-3"><label>Username</label><input id="username" class="form-control esports-input" required placeholder="Enter username"></div>
+                <div class="mb-3"><label>Password</label><input id="password" type="password" class="form-control esports-input" required placeholder="Enter password"></div>
+                <button class="btn btn-primary esports-btn w-100" type="submit">LOGIN</button>
+            </form>
+            <p class="demo-text mt-3">Demo login: admin / admin</p>
+        </div>
+    </div>
+</section>
+
+<!-- ADMIN -->
+<section id="admin" class="page">
+    <div class="container-fluid py-4">
+        <div class="admin-layout">
+            <aside class="admin-sidebar">
+                <h3>⚙ ADMIN PANEL</h3>
+                <button id="b-dashboard" class="admin-menu active" onclick="showAdmin('dashboard')">📊 Dashboard</button>
+                <button id="b-tournaments" class="admin-menu" onclick="showAdmin('tournaments')">🏆 Tournaments</button>
+                <button id="b-players" class="admin-menu" onclick="showAdmin('players')">👤 Players</button>
+                <button id="b-results" class="admin-menu" onclick="showAdmin('results')">📋 Results</button>
+                <button id="b-content" class="admin-menu" onclick="showAdmin('content')">⚙ Content</button>
+                <button class="admin-menu logout-btn" onclick="logout()">🚪 Logout</button>
+            </aside>
+
+            <div class="admin-content">
+
+                <div id="dashboard" class="admin-tab active">
+                    <h2 class="section-title">📊 DASHBOARD</h2>
+                    <div class="admin-stat-grid">
+                        <div class="stat-card"><p>Total Players</p><h2>120</h2></div>
+                        <div class="stat-card"><p>Today's Matches</p><h2>6</h2></div>
+                        <div class="stat-card"><p>Pending Results</p><h2>2</h2></div>
+                    </div>
+                    <div class="info-card mt-4"><h3>Recent Activity</h3><p>• Player 1 registered</p><p>• Player 2 registered</p><p>• Player 3 registered</p></div>
+                </div>
+
+                <div id="tournaments" class="admin-tab">
+                    <h2 class="section-title">🏆 TOURNAMENT MANAGEMENT</h2>
+                    <div class="card esports-card">
+                        <h3>Create Tournament</h3>
+                        <div class="admin-form-grid">
+                            <div class="mb-3"><label>Tournament Name</label><input class="form-control esports-input" placeholder="Tournament name"></div>
+                            <div class="mb-3"><label>Mode</label><select class="form-select esports-input"><option>Solo</option><option>Duo</option><option>Squad</option></select></div>
+                            <div class="mb-3"><label>Date & Time</label><input class="form-control esports-input" type="datetime-local"></div>
+                            <div class="mb-3"><label>Prize Pool</label><input class="form-control esports-input" placeholder="Prize amount"></div>
+                        </div>
+                        <button class="btn btn-primary esports-btn" onclick="alert('Tournament saved!')">SAVE TOURNAMENT</button>
+                    </div>
+                </div>
+
+                <div id="players" class="admin-tab">
+                    <h2 class="section-title">👤 PLAYER REGISTRATIONS</h2>
+                    <div class="card esports-card">
+                        <div class="table-responsive">
+                            <table class="table esports-table">
+                                <thead><tr><th>PLAYER</th><th>ID</th><th>MODE</th><th>PAYMENT</th><th>ACTION</th></tr></thead>
+                                <tbody>
+                                    <tr><td>Player 1</td><td>ID100</td><td>Solo</td><td><span class="status-badge">PAID</span></td><td><button class="btn btn-sm btn-primary">View</button></td></tr>
+                                    <tr><td>Player 2</td><td>ID101</td><td>Duo</td><td><span class="status-badge">PAID</span></td><td><button class="btn btn-sm btn-primary">View</button></td></tr>
+                                    <tr><td>Player 3</td><td>ID102</td><td>Squad</td><td>Pending</td><td><button class="btn btn-sm btn-primary">View</button></td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="results" class="admin-tab">
+                    <h2 class="section-title">📋 RESULTS MANAGEMENT</h2>
+                    <div class="card esports-card">
+                        <h3>Upload Match Result</h3>
+                        <div class="mb-3"><label>Select Tournament</label><select class="form-select esports-input"><option>Solo Match 1</option><option>Duo Match 1</option><option>Squad Match 1</option></select></div>
+                        <div class="mb-3"><label>Result Screenshot</label><input class="form-control esports-input" type="file" accept="image/*"></div>
+                        <button class="btn btn-primary esports-btn" onclick="alert('Result submitted!')">SUBMIT RESULT</button>
+                    </div>
+                </div>
+
+                <div id="content" class="admin-tab">
+                    <h2 class="section-title">⚙ CONTENT & SETTINGS</h2>
+                    <div class="card esports-card">
+                        <h3>Manage Rules</h3>
+                        <div class="mb-3"><label>Rule 1</label><input class="form-control esports-input" value="No team-up during Solo matches."></div>
+                        <div class="mb-3"><label>Rule 2</label><input class="form-control esports-input" value="No refunds after registration."></div>
+                        <div class="mb-3"><label>Rule 3</label><input class="form-control esports-input" value="Cheating and hacks are prohibited."></div>
+                        <button class="btn btn-primary esports-btn" onclick="alert('Settings saved!')">SAVE SETTINGS</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+</main>
+
+<footer>
+    <div class="container">
+        <p>⚡ Rai Esports | 🔥 Free Fire Tournament Platform</p>
+        <p class="footer-small">Daily tournaments • Fair play • Competitive gaming</p>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+
+script.js
+
+
+
+
